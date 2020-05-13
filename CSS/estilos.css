@@ -9,10 +9,14 @@
     background-image: url("../img/fundo.jpg");
     background-size:auto 100vh;
     height: 100vh;
-    font-family: Arial;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
   }
   
+  h2{
+    color: white;
+  }
+
   /*se a tela tiver pelo menos 400px vai carregar estes estilos */
   @media (min-width: 400px) {
     body{
@@ -79,21 +83,67 @@
   
   .site-title {
     font-size: 4em;
+    font-family: 'Gloria Hallelujah', cursive;
   }
 
   .site-subtitle {
     font-style: italic;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.8em;
   }
   
+  .portfolio{
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio h2{
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 1.5em;
+  }
+
+  .portfolio .grid{
+    display: grid;
+    gap: 1.5em;
+  }
+
+  @media(min-width: 560px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px ;
+    }
+  }
+
+  @media(min-width: 880px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px 240px;
+      justify-content: center;
+      align-content: center;
+      height: calc(100vh - 48px - 8em);
+    }
+  }
+
+  .portfolio figure{
+    text-align: center;
+  }
+
   .img-portfolio{
-    height: 200px;
-    width: 200px;
+    height:180px;
+    width: 240px;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1200px){
+    .img-portfolio{
+      height:180px;
+      width: 100%;
+    }
   }
 
   figcaption{
     color: white;
   }
 
-  h2{
-    color: white;
-  }
+  
+  
+
+  
